@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=toml
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_test:
+ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
+	echo "Running the test suite is disabled as it requires Go."
+#	set -e ; for pyvers in $(PYTHONS) ; do \
+#		python$$pyvers toml_test.py ; \
+#	done
+#	set -e ; for pyvers in $(PYTHON3S) ; do \
+#		python$$pyvers toml_test.py ; \
+#	done
+endif

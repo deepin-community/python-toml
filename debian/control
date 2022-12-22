@@ -1,0 +1,29 @@
+Source: python-toml
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Thomas Goirand <zigo@debian.org>,
+ Scott Kitterman <scott@kitterman.com>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-setuptools,
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-toml
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-toml.git
+Homepage: https://github.com/uiri/toml
+
+Package: python3-toml
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: library for Tom's Obvious, Minimal Language - Python 3.x
+ This package provides a Python module which parses and emits TOML. TOML aims
+ to be a minimal configuration file format that's easy to read due to obvious
+ semantics. TOML is designed to map unambiguously to a hash table. TOML should
+ be easy to parse into data structures in a wide variety of languages.
+ .
+ This package contains the Python 3.x module.

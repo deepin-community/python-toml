@@ -1,0 +1,83 @@
+python-toml (0.10.2-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Emmanuel Arias ]
+  * New upstream version 0.10.2 (Closes: #992892).
+  * d/control: Bump debhelper-compat to 13.
+  * d/control: Bump Standards-Version to 4.6.0.
+  * d/salsa-ci.yml: enable salsa-ci.
+
+ -- Emmanuel Arias <eamanu@yaerobi.com>  Tue, 24 Aug 2021 16:36:17 -0300
+
+python-toml (0.10.1-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Scott Kitterman ]
+  * New upstream release
+  * Bump standards-version to 4.5.0 without further change
+  * Update debian/copyright
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 17 May 2020 00:53:56 -0400
+
+python-toml (0.10.0-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Thomas Goirand ]
+  * Removed Python 2 support.
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 20 Jul 2019 21:47:15 +0200
+
+python-toml (0.10.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Remove excessive overrides from debian/rules
+  * Bump stanards version to 4.2.1 without further change
+  * Update debian/copyright
+  * Simplify debian/rules using pybuild as buildsystem
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 02 Nov 2018 15:57:47 -0400
+
+python-toml (0.9.3-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URLs (https).
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+
+  [ Daniel Baumann ]
+  * Updating vcs fields.
+  * Updating copyright format url.
+  * Running wrap-and-sort -bast.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+
+  [ Scott Kitterman ]
+  * New upstream release
+    - Update debian/copyright
+  * Agreed maintainer change to DPMT
+    - Updated maintainer in d/control
+    - Adjusted git repository format to DPMT standard
+    - Pointed Vcs-* at DPMT on salsa
+  * Added myself to uploaders
+  * Bump standards-version to 4.1.3 without further change
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 16 Feb 2018 12:38:07 -0500
+
+python-toml (0.9.1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #809808)
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 04 Jan 2016 17:59:04 +0800
